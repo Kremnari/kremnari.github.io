@@ -43,7 +43,11 @@
     	top: 20%;
     }
   </style>
-  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous">
+  </script>
   <script src="sparks.js"></script>
 </head>
 <body onload="startAnims()">
@@ -69,7 +73,7 @@
   		console.log('sw loading...')
 	  	window.addEventListener('load', function() {
 	  		navigator.serviceWorker.register('/sw.js').then(function(reg) {
-	  			console.log('service Worker Registered:', registration.scope)
+	  			console.log('service Worker Registered:', reg.scope)
 	  		}, function(err) {
 	  			console.log('service worker failed: ', err)
 	  		})  		

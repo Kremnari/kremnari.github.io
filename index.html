@@ -66,13 +66,15 @@
   </section>
   <script>
   	if('serviceWorker' in navigator) {
-  	window.addEventListener('load', function() {
-  		navigator.serviceWorker.register('/sw.js').then(function(reg) {
-  			console.log('service Worker Registered:', registration.scope)
-  		}, function(err) {
-  			console.log('service worker failed: ', err)
-  		})  		
-  	})
+  		console.log('sw loading...')
+	  	window.addEventListener('load', function() {
+	  		navigator.serviceWorker.register('/sw.js').then(function(reg) {
+	  			console.log('service Worker Registered:', registration.scope)
+	  		}, function(err) {
+	  			console.log('service worker failed: ', err)
+	  		})  		
+  		})
+  	}
   </script>
 </body>
 </html>

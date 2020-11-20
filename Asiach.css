@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Asiach';
+    src: url('fonts/Asiach.eot');
+    src: url('fonts/Asiach.eot') format('embedded-opentype'),
+         url('fonts/Asiach.woff2') format('woff2'),
+         url('fonts/Asiach.woff') format('woff'),
+         url('fonts/Asiach.ttf') format('truetype'),
+         url('fonts/Asiach.svg#Asiach') format('svg');
+}

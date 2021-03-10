@@ -1,0 +1,40 @@
+section.header {
+    height: 300px;
+    position: relative;
+}
+section div {
+    display: inline-block;
+}
+h2, h1 {
+ text-align: center;
+}
+.sparksLayer {
+  display: inline-block;
+}
+.header .left {
+  width: 14%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 20%;
+}
+.header a {
+  display: block;
+  height: 25%;
+  font-size: 2em;
+  text-align: center;
+  cursor: not-allowed;
+  color: red;
+}
+.header .center {
+  width: 70%;
+  margin: 0 15%;
+  position: absolute;
+}
+.header .right {
+  width: 14%;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 20%;
+}

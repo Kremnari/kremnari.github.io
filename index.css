@@ -26,8 +26,12 @@ h2, h1 {
   height: 25%;
   font-size: 2em;
   text-align: center;
-  cursor: not-allowed;
   color: #a12625;
+  text-decoration: none;
+}
+.header a:not([href]) {
+  cursor: not-allowed;
+  text-decoration: line-through darkred double;
 }
 .header .center {
   width: 70%;

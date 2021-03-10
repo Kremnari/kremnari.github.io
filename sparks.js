@@ -132,12 +132,12 @@ function drawDPGtextStroke(ctx, pos, color) {
 
 window.gCO = "lighten";
 window.pause = false;
-window.colors = {base: 'darkslategray',
+window.colors = {base: 'rgba(44, 76, 66)',
 				 exp: ['rgba(50, 205, 50, 1)', 'rgba(50, 205, 50, 0.25)'],
 				 parts: ['rgba(2, 202, 52, 0.75)', 'rgba(4, 139, 37, 1)'],
-				 dpg: 'black',
+				 dpg: 'rgba(4, 5, 4)',
 				mask: 'rgba(255, 255, 255, 1)',
-				stroke: [['0', '100', '0'],['255', '255', '255'] ]
+				stroke: [['0', '100', '0'],['127', '255', '255'] ]
 				};
 
 function colourGradientor(p, rgb_beginning, rgb_end){

@@ -33,7 +33,7 @@ function startAnims() {
 				explosions.push(new Explosion(this.x, this.y, explosions.length));
 				this.atTarget();
 			}
-			this.grad = ctx.createRadialGradient(this.x, this.y, this.radius-1, this.x, this.y, this.radius);
+			this.grad = ctx.createRadialGradient(this.x, this.y, this.radius-2, this.x, this.y, this.radius);
 			this.grad.addColorStop(0, window.colors.parts[0]);
 			this.grad.addColorStop(1, window.colors.parts[1]);
 			ctx.fillStyle = this.grad;

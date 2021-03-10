@@ -45,3 +45,16 @@ h2, h1 {
   right: 0px;
   top: 20%;
 }
+
+.projectTabs {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.projectTabs > article {
+    flex: 0 0 auto;
+}
+a:any-link {
+    color: #a12625; 
+}

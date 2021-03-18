@@ -2,9 +2,17 @@
     <head>
         <link rel="stylesheet" href="index.css" />
         <style>
+            body {
+                width: 95%;
+            }
             section {
-                border-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0) 20%, red 40%, red 60%, rgba(0,0,0,0) 80%, rgba(0,0,0,0)) 10 / 4 0 0 0;
+                border-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0) 20%, red 40%, red 60%, rgba(0,0,0,0) 80%, rgba(0,0,0,0)) 10 / 2 0 0 0;
                 margin-top: 2%;
+                border-style: solid;
+            }
+            hr {
+                border-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0) 20%, darkblue 40%, darkblue 60%, rgba(0,0,0,0) 80%, rgba(0,0,0,0)) 10;
+                border-width: 3px;
                 border-style: solid;
             }
             .projectTabs {
@@ -14,10 +22,18 @@
                 flex-wrap: wrap;
             }
             .projectTabs > article {
-                flex: 0 0 auto;
+                flex: 0 0 30%;
             }
             .projectTabs p {
                 max-width: 100vw;
+
+            }
+            details[open] {
+                max-width: 90vw;
+            }
+            .summaryBlock {
+                text-align: center;
+                font-size: larger;
 
             }
         </style>
@@ -33,16 +49,23 @@
                     <h3><a href="https://digitalpsigen.tech/jsonDS2/">JsonDS2</a></h3>
                     <details>
                         <summary>Json Data Schema/Data Source</summary>
-                        <p>A tool for creating json data sources</p>
+                        <p>
+                            A tool for creating json data sources capable of describing data, it's structure, and how it can be used<br />
+                            <a href="https://github.com/Kremnari/jsonDS2">Github</a>
+                        </p>
                     </details>
                 </article>
                 <article>
                     <h3>
-                        <a href="https://digitalpsigen.tech/TheFactoryMustGrow/">The Factory Must Grow</a>
+                        <a href="/">The Factory Must Grow</a>
                     </h3>
                     <details>
                         <summary>A mobile game about factory expansion</summary>
-                        <p>Based on factorio et al. a game that puts the player in charge of an ever consuming factory</p>
+                        <p>
+                            Based on factorio et al. a game that puts the player in charge of an ever consuming factory<br />
+                            <a href="https://github.com/Kremnari/TheFactoryMustGrow">Github</a>
+                            <a href="biz_plans/TFMG.html">Business Plan</a>
+                        </p>
                     </details>
                 </article>
             </div>
@@ -115,5 +138,18 @@
                 </article>
             </div>
         </section>
+        <hr>
+        <h2>
+            My Purpose
+        </h2>
+        <div class="summaryBlock">
+            <p>My goal in computing is to create a series of tools that focus on increasing simplicity and reduce repitition in developing software.</p>
+            <p>My own progress thus far has been impacted by complex frameworks and new features requiring changes in multiple places.</p>
+            <p>This industry prides itself on efficiency, but I have seen changes and advancements that increase complexity.</p>
+            <p>I want to create tools and frameworks that can be used to describe and generate quality applications.</p>
+            <p>Then...</p>
+            <p>Use those techniques to create virtual reality development environments and general purpose AIs.</p>
+        </div>
+        <br />
     </body>
 </html>

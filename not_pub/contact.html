@@ -3,6 +3,11 @@
   </head>
   <body>
 Sorry, can't embed mailto links in pdfs! <br>
-    <a href="mailto:kremnari@gmail.com">Email</a>
+    <a onclick="email()">Email</a><br>
+    <script>
+      function email() {
+        window.open("mailto:kremnari@gmail.com?subject=[TFMG]", "_blank");
+      }
+    </script>
   </body>
 </html

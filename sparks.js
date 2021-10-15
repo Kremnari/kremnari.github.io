@@ -1,3 +1,5 @@
+
+
 function startAnims() {
 	window.requestAnimationFrame=function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.msRequestAnimationFrame||window.oRequestAnimationFrame||function(f){window.setTimeout(f,1e3/60)}}();
 	var canvas = document.getElementById("slayer1");
@@ -133,9 +135,9 @@ function drawDPGtextStroke(ctx, pos, color) {
 window.gCO = "lighten";
 window.pause = false;
 window.colors = {base: 'rgba(44, 76, 66)',
-				 exp: ['rgba(50, 205, 50, 1)', 'rgba(50, 205, 50, 0.25)'],
-				 parts: ['rgba(2, 202, 52, 0.75)', 'rgba(4, 139, 37, 1)'],
-				 dpg: 'rgba(4, 5, 4)',
+				exp: ['rgba(50, 205, 50, 1)', 'rgba(50, 205, 50, 0.25)'],
+				parts: ['rgba(2, 202, 52, 0.75)', 'rgba(4, 139, 37, 1)'],
+				dpg: 'rgba(4, 5, 4)',
 				mask: 'rgba(255, 255, 255, 1)',
 				stroke: [['0', '100', '0'],['127', '255', '255'] ]
 				};

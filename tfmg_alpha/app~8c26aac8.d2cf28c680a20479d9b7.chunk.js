@@ -12,18 +12,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
-/***/ "resources/value-converters/CanMine":
-/*!***************************************************!*\
-  !*** ./src/resources/value-converters/CanMine.js ***!
-  \***************************************************/
-/*! exports provided: CanMineValueConverter */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"CanMineValueConverter\", function() { return CanMineValueConverter; });\n/* harmony import */ var ItemMgr__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ItemMgr */ \"EfK0\");\n/* harmony import */ var aurelia_framework__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! aurelia-framework */ \"aurelia-framework\");\nvar _dec, _class;\n\n\n\nvar CanMineValueConverter = (_dec = Object(aurelia_framework__WEBPACK_IMPORTED_MODULE_1__[\"inject\"])(ItemMgr__WEBPACK_IMPORTED_MODULE_0__[\"default\"]), _dec(_class = /*#__PURE__*/function () {\n  function CanMineValueConverter(im) {\n    this.ItemMgr = im;\n  }\n\n  var _proto = CanMineValueConverter.prototype;\n\n  _proto.toView = function toView(obj) {\n    if (!obj) return {};\n    var ret = {};\n\n    for (var _i = 0, _Object$keys = Object.keys(obj); _i < _Object$keys.length; _i++) {\n      var each = _Object$keys[_i];\n      var val = obj[each];\n\n      if (!val.mining_ingredients) {\n        ret[each] = val;\n      }\n    }\n\n    return ret;\n  };\n\n  return CanMineValueConverter;\n}()) || _class);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmVzb3VyY2VzL3ZhbHVlLWNvbnZlcnRlcnMvQ2FuTWluZS5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3NyYy9yZXNvdXJjZXMvdmFsdWUtY29udmVydGVycy9DYW5NaW5lLmpzPzVjM2EiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEl0ZW1NZ3IgZnJvbSBcIkl0ZW1NZ3JcIjtcclxuaW1wb3J0IHtpbmplY3R9IGZyb20gJ2F1cmVsaWEtZnJhbWV3b3JrJztcclxuXHJcbkBpbmplY3QoSXRlbU1ncilcclxuZXhwb3J0IGNsYXNzIENhbk1pbmVWYWx1ZUNvbnZlcnRlciB7XHJcblx0Y29uc3RydWN0b3IoaW0pIHtcclxuXHRcdHRoaXMuSXRlbU1nciA9IGltXHJcblx0fVxyXG5cdHRvVmlldyhvYmopIHtcclxuICAgIGlmKCFvYmopIHJldHVybiB7fVxyXG5cdFx0bGV0IHJldCA9IHt9XHJcblx0XHRmb3IgKGxldCBlYWNoIG9mIE9iamVjdC5rZXlzKG9iaikpIHtcclxuICAgICAgbGV0IHZhbCA9IG9ialtlYWNoXVxyXG5cdFx0XHRpZiAoIXZhbC5taW5pbmdfaW5ncmVkaWVudHMpIHtcclxuICAgICAgICByZXRbZWFjaF0gPSB2YWxcclxuICAgICAgfVxyXG4gICAgfVxyXG5cdFx0cmV0dXJuIHJldFxyXG5cdH1cclxufVxyXG4iXSwibWFwcGluZ3MiOiI7Ozs7OztBQUFBO0FBQ0E7QUFHQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBSkE7QUFDQTtBQURBO0FBS0E7QUFDQTtBQUNBO0FBQUE7QUFBQTtBQUNBO0FBQ0E7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQUE7QUFDQTtBQUNBO0FBZkE7QUFBQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///resources/value-converters/CanMine\n");
-
-/***/ }),
-
 /***/ "resources/value-converters/filter":
 /*!**************************************************!*\
   !*** ./src/resources/value-converters/filter.js ***!

@@ -64,7 +64,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"vendor.async.aurelia-dialog~3e799143":"vendor.async.aurelia-dialog~3e799143"}[chunkId]||chunkId) + "." + "d2cf28c680a20479d9b7" + ".chunk.js"
+/******/ 		return __webpack_require__.p + "" + ({"vendor.async.aurelia-dialog~3e799143":"vendor.async.aurelia-dialog~3e799143"}[chunkId]||chunkId) + "." + "102c41adf8fbd4a027ee" + ".chunk.js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -203,7 +203,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "tfmg_alpha";
+/******/ 	__webpack_require__.p = "/tfmg_alpha/";
 /******/
 /******/ 	// on error function for async loading
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };

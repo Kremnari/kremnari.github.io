@@ -31,7 +31,7 @@ h2, h1 {
   height: 25%;
   font-size: 2em;
   text-align: center;
-  color: #a12625;
+  color: rgb(50, 205, 50);
   text-decoration: none;
 }
 .header a:not([href]) {
@@ -49,8 +49,4 @@ h2, h1 {
   position: absolute;
   right: 0px;
   top: 20%;
-}
-
-a:any-link {
-    color: #a12625; 
 }

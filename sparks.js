@@ -1,13 +1,17 @@
 
 
 function startAnims() {
+	console.log('pop')
 	window.requestAnimationFrame=function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.msRequestAnimationFrame||window.oRequestAnimationFrame||function(f){window.setTimeout(f,1e3/60)}}();
 	var canvas = document.getElementById("slayer1");
 	var ctx = canvas.getContext("2d");
 
-	var w = document.getElementById("slayer1").parentNode.offsetWidth, h = 200;
+	let parWidth = document.getElementById("slayer1").parentNode.offsetWidth
+	let w = parWidth > window.outerWidth ? window.outerWidth : parWidth
+	let h = 200;
 	canvas.width = w * window.devicePixelRatio;
 	canvas.height = h * window.devicePixelRatio;
+	console.log(w+" "+h)
 	ctx.scale(window.devicePixelRatio,window.devicePixelRatio);
 	var fsize = 7;
 	var textWidth = 10;
@@ -152,3 +156,7 @@ function colourGradientor(p, rgb_beginning, rgb_end){
             parseInt(rgb_beginning[2] * w1 + rgb_end[2] * w2)];
     return rgb;
 };
+
+// on window resize run startAnims
+window.addEventListener('resize', startAnims);
+

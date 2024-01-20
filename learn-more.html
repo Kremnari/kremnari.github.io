@@ -1,0 +1,57 @@
+<html>
+    <body>
+        <h1 id="header">Learn More</h1>
+        <div id="noCode" style="display:none">
+            Please enter the code provided on my business card
+            <input type="text" id="codeInput" /><button id="codeSubmit">Submit</button>
+        </div>
+        <div id="articles">
+            Standby...
+        </div>
+
+    </body>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    // Get the value of a specific parameter
+    const parameterValue = urlParams.get('code');
+    // Use the parameter value
+    if (parameterValue == null) {
+        document.getElementById("noCode").style.display = "block";
+        document.getElementById("articles").style.display = "none";
+    } else {
+        document.getElementById("articles").innerHTML = "Loading Code: " + parameterValue;
+        // Send the code to the server
+        fetch('https://digitalpsigen.tech/api/moreinfo/bizcode', {
+            method: 'POST',
+            body: JSON.stringify({ code: parameterValue }),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("noCode").style.display = "none";
+            // Update the code div with the server response
+            document.getElementById("header").innerHTML = data.data.header;
+            document.getElementById("name").innerHTML = data.data.name;
+            document.getElementById("articles").innerHTML = ""; 
+            data.data.articles.forEach(article => {
+                document.getElementById("articles").innerHTML += article;
+            })
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }
+});
+document.querySelector("#codeSubmit").addEventListener("click", function() {
+    // Get the code from the input
+    var code = document.getElementById("codeInput").value;
+    // Update the URL with the code parameter
+    location.href = location.pathname + "?code=" + code;
+});
+</script>
+</html>

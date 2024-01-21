@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <style>
+            section {
+                display: inline-block;
+                width: 45%;
+                height: 20%;
+                padding: 1em;
+                box-sizing: border-box;
+            }
+            address > span {
+                display: block;
+            }
+            #vCardDownload > a {
+                border: 2px solid lightblue;
+                background: lightblue;
+                border-radius: 5px;
+                color: black;
+                text-align: center;
+                padding: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="contact_info">
+            <address>
+                <span>Nick Smith, Kremnari</span>
+                <span>CEO, Founder</span>
+                <span>Kremnari Technologies<sup>TM</sup></span>
+                <span>303-847-3266</span>
+            </address>
+        </section>
+        <section id="vCardDownload">
+            <a href="https://digitalpsigen.tech/vcards/ceo.vcf">
+                Download vCard
+            </a>
+        </section>
+        <form style="display: hidden">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="text" name="email" placeholder="Email" />
+            <input type="text" name="phone" placeholder="Phone" />
+            <input type="text" name="message" placeholder="Message" />
+            <input type="submit" value="Send Message" />
+        </form>
+    </body>
+</html>

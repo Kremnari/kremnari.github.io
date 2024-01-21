@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:Nicholas Smith
+N;CHARSET=UTF-8:Smith;Nicholas;;;
+NICKNAME;CHARSET=UTF-8:Kremnari
+GENDER:M
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:kremnari@gmail.com
+TEL;TYPE=CELL:3038473266
+ADR;CHARSET=UTF-8;TYPE=HOME:;;;Broomfield;CO;80020;United States
+URL;CHARSET=UTF-8:https://digitalpsigen.tech
+X-SOCIALPROFILE;TYPE=facebook:https://www.facebook.com/Kremnari
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/kremnari/
+REV:2024-01-17T15:53:13.379Z
+END:VCARD

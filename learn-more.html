@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
         document.getElementById("articles").innerHTML = "Loading Code: " + parameterValue;
         // Send the code to the server
-        fetch('https://digitalpsigen.tech/api/moreinfo/bizcode', {
+        fetch('https://kremnari.tech/api/moreinfo/bizcode', {
             method: 'POST',
             body: JSON.stringify({ code: parameterValue }),
             headers: {
